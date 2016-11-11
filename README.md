@@ -1,6 +1,6 @@
 #Sorting it out code Kata
 
-*Learning JS 8 features*
+*Learning JS 6 features*
 
 taken from [codekata.com](http://codekata.com/kata/kata11-sorting-it-out/)
 
