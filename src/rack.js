@@ -3,8 +3,7 @@
 class Rack {
 
   constructor(){
-    this.balls = {};
-
+    this.balls = [];
   }
 
   getBalls(){
