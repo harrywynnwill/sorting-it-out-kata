@@ -1,0 +1,26 @@
+{
+  "name": "sorting-it-out",
+  "version": "1.0.0",
+  "description": "coding kata",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrywynnwill/sorting-it-out-kata.git"
+  },
+  "author": "Harry Wynn-Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrywynnwill/sorting-it-out-kata/issues"
+  },
+  "homepage": "https://github.com/harrywynnwill/sorting-it-out-kata#readme"
+}

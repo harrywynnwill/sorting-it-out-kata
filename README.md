@@ -1,8 +1,9 @@
 #Sorting it out code Kata
 
-*Learning JS 6 features*
+*Learning JS 6 features and Mocha*
 
 taken from [codekata.com](http://codekata.com/kata/kata11-sorting-it-out/)
+[Mocha](https://mochajs.org/#installation)
 
 Just because we need to sort something doesn’t necessarily mean we need to use a conventional sorting algorithm.
 
