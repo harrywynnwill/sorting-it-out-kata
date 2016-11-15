@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "benchmark": "^2.1.2"
+  },
   "devDependencies": {
     "mocha": "^3.1.2"
   },
