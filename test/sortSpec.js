@@ -10,7 +10,7 @@ describe('Sort', function(){
     it('sorts the array using the bubble sort technique', function(){
       var sort = new Sort();
       var rack = [50,30,10,21,45];
-      assert.deepEqual(sort.bubbleSort(rack), [10,21,30,45,50]);
+      assert.deepEqual(console.time("bubble test");sort.bubbleSort(rack);console.timeEnd("bubble test");, [10,21,30,45,50]);
     });
   });
 });
