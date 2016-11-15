@@ -3,11 +3,15 @@
 class Rack {
 
   constructor(){
-    this.balls = [];
+    this._balls = [];
   }
 
-  getBalls(){
-    return this.balls;
+  add(ball){
+    this._balls.push(ball);
+  }
+
+  get balls (){
+    return this._balls;
   }
 
 }
