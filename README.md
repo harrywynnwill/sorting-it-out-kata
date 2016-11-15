@@ -3,7 +3,12 @@
 *Learning JS 6 features and Mocha*
 
 taken from [codekata.com](http://codekata.com/kata/kata11-sorting-it-out/)
+
 [Mocha](https://mochajs.org/#installation)
+
+I've taken notes on sorting algorithms to be found [here](algorithm.md). I will be testing the various sorting algorithms for speed with 5, 7, 9 and 15 balls as per the kata!
+
+##Kata
 
 Just because we need to sort something doesn’t necessarily mean we need to use a conventional sorting algorithm.
 
