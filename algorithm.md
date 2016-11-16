@@ -12,6 +12,23 @@
 2. iterate throught the array bar index 0 and swap the lowest element index 1
 3. continue the above until you reach the last element in the array.
 
+#### Insertion Sort (like a deck of playing cards manual sort)
+
+1. start with one element, first element.
+2. if second element is lower you move first element to index 1 and place second element at index 0.
+3. next element is in between the two others you move first element to index 2 and insert element 3 at index 1.
+
+etc...
+
+#### Merge Sort
+
+break down array into smaller pieces then merge them together by comparing them
+2 methods
+1. divides array into two
+2. merges array.
+
+
+
 
 ##### reference
 

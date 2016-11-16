@@ -11,6 +11,10 @@ add('#selectionsSort()', function(){
   var sort = new Sort();
   sort.selectionSort(rack);
 })
+add('#insetionSort()', function(){
+  var sort = new Sort();
+  sort.insertionSort(rack);
+})
 add('#javascriptSort()', function(){
   rack.sort();
 })

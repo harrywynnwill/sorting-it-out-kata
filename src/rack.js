@@ -2,8 +2,9 @@
 
 class Rack {
 
-  constructor(){
+  constructor(sort){
     this._balls = [];
+    this._sort = sort;
   }
 
   add(ball){
@@ -12,6 +13,10 @@ class Rack {
 
   get balls (){
     return this._balls;
+  }
+
+  sort () {
+    this._sort.insertionSort(Rack.balls());
   }
 
 }

@@ -1,6 +1,15 @@
 var assert = require('assert');
 var expect = require('expect.js');
-Rack = require('../src/rack.js')
+Rack = require('../src/rack.js');
+var chai = require('chai');
+var sinon = require('sinon');
+var sinonChai = require('sinon-chai');
+chai.use(sinonChai);
+var expect = chai.expect;
+var should = chai.should();
+var sort = { insertionSort: function () {} };
+var spy = sinon.spy(sort, 'insertionSort');
+
 
 describe('Rack', function() {
 
@@ -22,7 +31,11 @@ describe('Rack', function() {
       assert.deepEqual(rack.balls,[20]);
     });
   });
-  // describe('#sort()', function(){
-  //   it('')
-  // })
+  describe('#sort()', function(){
+    it('sorts the balls in the rack', function(){
+      var rack = new Rack(sort);
+      rack.sort();
+      assert(spy.calledWith(rack))
+    });
+  });
 });
