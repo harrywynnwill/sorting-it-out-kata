@@ -76,7 +76,7 @@ class Sort {
 			right = rack.slice(mid);
 		//send left and right to the mergeSort to broke it down into pieces
 		//then merge those
-      return merge(mergeSort(left), mergeSort(right));
+      return this.merge(this.mergeSort(left), this.mergeSort(right));
 
 	}
 
