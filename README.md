@@ -6,7 +6,19 @@ taken from [codekata.com](http://codekata.com/kata/kata11-sorting-it-out/)
 
 [Mocha](https://mochajs.org/#installation)
 
-I've taken notes on sorting algorithms to be found [here](algorithm.md). I will be testing the various sorting algorithms for speed with 5, 7, 9 and 15 balls as per the kata!
+I've taken notes on sorting algorithms to be found [here](https://github.com/harrywynnwill/sorting-it-out-kata/blob/master/algorithm.md). I will be testing the various sorting algorithms for speed with 5, 7, 9 and 15 balls as per the kata!
+
+###installation
+
+`$ git clone https://github.com/harrywynnwill/sorting-it-out-kata`
+
+`$ cd sorting-it-out-kata`
+
+`$ npm install`
+
+`$ npm test` to run the tests
+
+`$ benchmartian` to run the benchmark performance stats in CLI
 
 ##Kata
 

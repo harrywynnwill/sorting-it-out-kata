@@ -2,7 +2,6 @@
 
 class Sort {
   constructor(){
-
   }
   bubbleSort(rack){
    var len = rack.length;
@@ -17,6 +16,23 @@ class Sort {
    }
    return rack;
   }
+
+  selectionSort(rack){
+    var minIdx, temp, len = rack.length;
+    for(var i = 0; i < len; i++){
+      minIdx = i;
+      for(var  j = i+1; j<len; j++){
+         if(rack[j]<rack[minIdx]){
+            minIdx = j;
+         }
+      }
+      temp = rack[i];
+      rack[i] = rack[minIdx];
+      rack[minIdx] = temp;
+    }
+    return rack;
+  }
+
 }
 
 module.exports = Sort;
