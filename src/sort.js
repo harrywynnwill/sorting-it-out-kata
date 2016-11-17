@@ -50,7 +50,7 @@ class Sort {
 		return rack;
 	}
 
-  merge(left, right) {
+  _merge(left, right) {
 		var result = [],
 			lLen = left.length,
 			rLen = right.length,
@@ -76,7 +76,7 @@ class Sort {
 			right = rack.slice(mid);
 		//send left and right to the mergeSort to broke it down into pieces
 		//then merge those
-      return this.merge(this.mergeSort(left), this.mergeSort(right));
+      return this._merge(this.mergeSort(left), this.mergeSort(right));
 
 	}
 

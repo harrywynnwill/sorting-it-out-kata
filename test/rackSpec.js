@@ -35,7 +35,7 @@ describe('Rack', function() {
     it('sorts the balls in the rack', function(){
       var rack = new Rack(sort);
       rack.sort();
-      assert(spy.calledWith(rack))
+      assert(spy.calledWith(this._balls))
     });
   });
 });

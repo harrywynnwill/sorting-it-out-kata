@@ -19,24 +19,45 @@ add('#bubbleSort() with 9 balls', function(){
 add('#bubbleSort() with 15 balls', function(){
   sort.bubbleSort(rackFifteen);
 })
-add('#selectionsSort()', function(){
-  var sort = new Sort();
+
+add('#selectionsSort() with 5 balls', function(){
   sort.selectionSort(rackFive);
 })
-add('#insetionSort()', function(){
-  var sort = new Sort();
+add('#selectionsSort() with 7 balls', function(){
+  sort.selectionSort(rackSeven);
+})
+add('#selectionsSort() with 9 balls', function(){
+  sort.selectionSort(rackNine);
+})
+add('#selectionsSort() with 15 balls', function(){
+  sort.selectionSort(rackFifteen);
+})
+
+
+add('#insetionSort() with 5 balls', function(){
   sort.insertionSort(rackFive);
 })
+add('#insetionSort() with 7 balls', function(){
+  sort.insertionSort(rackSeven);
+})
+add('#insetionSort() with 9 balls', function(){
+  sort.insertionSort(rackNine);
+})
+add('#insetionSort() with 15 balls', function(){
+  sort.insertionSort(rackFifteen);
+})
+
 add('#javascriptSort() with 5 balls', function(){
-  rackFive.sort();
+  rackFive.sort(rackFive);
 })
 add('#javascriptSort() with 7 balls', function(){
-  rackSeven.sort();
+  rackSeven.sort(rackSeven);
 })
 add('#javascriptSort() with 9 balls', function(){
-  rackNine.sort();
+  rackNine.sort(rackNine);
 })
 add('#javascriptSort() with 15 balls', function(){
-  rackFifteen.sort();
+  rackFifteen.sort(rackFifteen);
 })
-options.maxTime = 1; // Second
+
+options.maxTime = .5; // Second

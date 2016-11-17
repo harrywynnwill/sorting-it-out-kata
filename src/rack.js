@@ -16,9 +16,8 @@ class Rack {
   }
 
   sort () {
-    this._sort.insertionSort(Rack.balls());
+    this._sort.insertionSort(this._balls);
   }
-
 }
 
 module.exports = Rack;
