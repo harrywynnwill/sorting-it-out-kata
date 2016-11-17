@@ -7,19 +7,20 @@ class Rack {
     this._sort = sort;
   }
 
-  drawBall(){
-    
-  }
-
   add(ball){
-    this._balls.push(ball);
+    this._drawBall(ball);
+    this._sortBalls();
   }
 
   get balls (){
     return this._balls;
   }
 
-  sort () {
+  _drawBall(ball){
+    this._balls.push(ball);
+  }
+
+  _sortBalls() {
     this._sort.insertionSort(this._balls);
   }
 }

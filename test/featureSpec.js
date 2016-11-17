@@ -6,7 +6,7 @@ describe('Feature Test', function(){
 
 
   describe('Draw 5 balls ', function(){
-    beforeEach(function(){
+    before(function(){
       var sort = new Sort();
       var rack = new Rack(sort);
     });
@@ -20,6 +20,10 @@ describe('Feature Test', function(){
       assert.deepEqual(rack.balls, [10, 20]);
       rack.add(30);
       assert.deepEqual(rack.balls, [10, 20, 30]);
+      rack.add(11);
+      assert.deepEqual(rack.balls, [10, 11, 20, 30]);
+      rack.add(48);
+      assert.deepEqual(rack.balls, [10, 11, 20, 30, 48]);
     });
   });
   });

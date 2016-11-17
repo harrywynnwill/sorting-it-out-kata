@@ -6,8 +6,10 @@ var sinonChai = require('sinon-chai');
 chai.use(sinonChai);
 var expect = chai.expect;
 var should = chai.should();
+
 var sort = { insertionSort: function () {} };
-var spy = sinon.spy(sort, 'insertionSort');
+var spy = sinon.spy();
+var mock = sinon.mock(sort);
 
 
 describe('Rack', function() {
@@ -23,18 +25,19 @@ describe('Rack', function() {
     });
   });
 
-  describe('#add()', function(){
-    it('adds a ball to the rack', function(){
+  describe('#drawBall()', function(){
+    it('draws a ball to the rack', function(){
       var rack = new Rack();
-      rack.add(20);
+      rack._drawBall(20);
       assert.deepEqual(rack.balls,[20]);
     });
   });
   describe('#sort()', function(){
     it('sorts the balls in the rack', function(){
       var rack = new Rack(sort);
-      rack.sort();
-      assert(spy.calledWith(this._balls))
+      rack._sortBalls();
+      mock.expects("insertionSort").once();
+      mock.verify();
     });
   });
   // describe('#drawBall()' function(){
