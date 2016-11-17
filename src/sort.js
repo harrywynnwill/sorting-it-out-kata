@@ -50,22 +50,6 @@ class Sort {
 		return rack;
 	}
 
-  _merge(left, right) {
-		var result = [],
-			lLen = left.length,
-			rLen = right.length,
-			l = 0,
-			r = 0;
-		while (l < lLen && r < rLen) {
-			if (left[l] < right[r]) {
-				result.push(left[l++]);
-			} else {
-				result.push(right[r++]);
-			}
-		}
-		//remaining part needs to be addred to the result
-		return result.concat(left.slice(l)).concat(right.slice(r));
-	}
 
 	mergeSort(rack) {
 		var len = rack.length;
@@ -74,11 +58,24 @@ class Sort {
 		var mid = Math.floor(len / 2),
 			left = rack.slice(0, mid),
 			right = rack.slice(mid);
-		//send left and right to the mergeSort to broke it down into pieces
-		//then merge those
       return this._merge(this.mergeSort(left), this.mergeSort(right));
 
 	}
+  _merge(left, right) {
+    var result = [],
+      lLen = left.length,
+      rLen = right.length,
+      l = 0,
+      r = 0;
+    while (l < lLen && r < rLen) {
+      if (left[l] < right[r]) {
+        result.push(left[l++]);
+      } else {
+        result.push(right[r++]);
+      }
+    }
+    return result.concat(left.slice(l)).concat(right.slice(r));
+  }
 
 }
 
