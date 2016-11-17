@@ -7,6 +7,10 @@ class Rack {
     this._sort = sort;
   }
 
+  drawBall(){
+    
+  }
+
   add(ball){
     this._balls.push(ball);
   }

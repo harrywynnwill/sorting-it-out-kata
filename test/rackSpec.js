@@ -1,5 +1,4 @@
 var assert = require('assert');
-var expect = require('expect.js');
 Rack = require('../src/rack.js');
 var chai = require('chai');
 var sinon = require('sinon');
@@ -38,4 +37,9 @@ describe('Rack', function() {
       assert(spy.calledWith(this._balls))
     });
   });
+  // describe('#drawBall()' function(){
+  //   it('draws a ball and sorts the rack', function(){
+  //
+  //   });
+  // });
 });

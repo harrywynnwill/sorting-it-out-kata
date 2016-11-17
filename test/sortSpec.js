@@ -2,10 +2,6 @@ var assert = require('assert');
 var expect = require('expect.js');
 Sort = require('../src/sort.js')
 
-
-
-
-
 // see algorithm.md in the root for an explanation of the sorting algorithms
 
 describe('Sort', function(){
