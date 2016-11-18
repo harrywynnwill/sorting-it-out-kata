@@ -34,16 +34,16 @@ add('#selectionsSort() with 15 balls', function(){
 })
 
 
-add('#insetionSort() with 5 balls', function(){
+add('#insertionSort() with 5 balls', function(){
   sort.insertionSort(rackFive);
 })
-add('#insetionSort() with 7 balls', function(){
+add('#insertionSort() with 7 balls', function(){
   sort.insertionSort(rackSeven);
 })
-add('#insetionSort() with 9 balls', function(){
+add('#insertionSort() with 9 balls', function(){
   sort.insertionSort(rackNine);
 })
-add('#insetionSort() with 15 balls', function(){
+add('#insertionSort() with 15 balls', function(){
   sort.insertionSort(rackFifteen);
 })
 

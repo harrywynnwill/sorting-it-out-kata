@@ -10,7 +10,7 @@ describe('Feature Test', function(){
       var sort = new Sort();
       var rack = new Rack(sort);
     });
-    it('it sorts the rack after each ball is drawn to the rack', function(){
+    it('sorts the rack after each ball is drawn to the rack', function(){
       var sort = new Sort();
       var rack = new Rack(sort);
       assert.deepEqual(rack.balls, []);
@@ -26,4 +26,14 @@ describe('Feature Test', function(){
       assert.deepEqual(rack.balls, [10, 11, 20, 30, 48]);
     });
   });
-  });
+  describe('Sorting Characters', function(){
+    it('takes a block of text and returns the letters it contain sorted', function(){
+      var sort = new Sort();
+      var character = new Character(sort);
+      let string = "When not studying nuclear physics, Bambi likes to play beach volleyball.";
+      let splitString = "aaaaabbbbcccdeeeeeghhhiiiiklllllllmnnnnooopprsssstttuuvwyyyy";
+      assert.equal(character.splitter(string, splitString));
+
+    })
+  })
+});
