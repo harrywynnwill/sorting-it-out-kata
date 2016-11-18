@@ -6,16 +6,22 @@ var sinonChai = require('sinon-chai');
 chai.use(sinonChai);
 var expect = chai.expect;
 var should = chai.should();
-
-var sort = { insertionSort: function () {} };
-var spy = sinon.spy();
-var mock = sinon.mock(sort);
-
+//
+// var sort = { insertionSort: function () {} };
+// var spy = sinon.spy();
+// var sort = sinon.mock();
+//
+// var stub = sinon.stub(sort, "insertionSort", func);
 
 describe('Rack', function() {
 
-  before(function() {
-    var rack = new Rack();
+  var sort;
+  var rack;
+
+  beforeEach(function() {
+    rack = new Rack();
+    sort = sinon.sort.create
+
   });
 
   describe('#balls()', function() {
@@ -36,10 +42,10 @@ describe('Rack', function() {
     it('sorts the balls in the rack', function(){
       var rack = new Rack(sort);
       rack._sortBalls();
-      mock.expects("insertionSort").once();
-      mock.verify();
+      expect(stub).to.have.been.calledWith("insertionSort");
     });
   });
+
   // describe('#drawBall()' function(){
   //   it('draws a ball and sorts the rack', function(){
   //
