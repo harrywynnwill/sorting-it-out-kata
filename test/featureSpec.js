@@ -30,10 +30,9 @@ describe('Feature Test', function(){
     it('takes a block of text and returns the letters it contain sorted', function(){
       var sort = new Sort();
       var character = new Character(sort);
-      let string = "When not studying nuclear physics, Bambi likes to play beach volleyball.";
+      let string = character.splitter("When not studying nuclear physics, Bambi likes to play beach volleyball.");
       let splitString = "aaaaabbbbcccdeeeeeghhhiiiiklllllllmnnnnooopprsssstttuuvwyyyy";
-      assert.equal(character.splitter(string, splitString));
-
+      assert.equal(string, splitString);
     })
   })
 });

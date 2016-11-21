@@ -6,10 +6,11 @@ class Character{
   splitter(string){
   let splitString = this._removePunctuationAndSpaces(string);
   let splitStringLower = splitString.toLowerCase();
-  let array = Array.from(splitStringLower);
-  let sortedArray = this._sortString(array);
+
+  
+  let charArray = Array.from(splitStringLower);
+  let sortedArray = this._sortString(CharArray);
   let sortedSting = sortedArray.join("");
-  console.log(sortedSting)
   return sortedSting;
   }
   _removePunctuationAndSpaces(string){

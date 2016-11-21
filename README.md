@@ -6,6 +6,8 @@ taken from [codekata.com](http://codekata.com/kata/kata11-sorting-it-out/)
 
 [Mocha](https://mochajs.org/#installation)
 
+[blog post - comparison between Jasmine, Mocha, Sinon and Chai](http://thejsguy.com/2015/01/12/jasmine-vs-mocha-chai-and-sinon.html)
+
 I've taken notes on sorting algorithms to be found [here](https://github.com/harrywynnwill/sorting-it-out-kata/blob/master/algorithm.mdr). I will be testing the various sorting algorithms for speed with 5, 7, 9 and 15 balls as per the kata!
 
 ###installation
