@@ -1,3 +1,5 @@
+'use strict';
+
 class Character{
   constructor(sort){
     this._sort = sort;
@@ -6,8 +8,7 @@ class Character{
   splitter(string){
     this._splitString = this._stringFormatter(string);
     this._sortString(this._splitString);
-    this._splitString = this._splitString.join("");
-    return this._splitString;
+    return this._stringer(this._splitString);
   }
 
   _stringFormatter(string){
@@ -17,6 +18,11 @@ class Character{
   _sortString(string){
     return this._sort.insertionSort(string);
   }
+
+  _stringer(array){
+    return array.join("")
+  }
+
 
 }
 module.exports = Character;

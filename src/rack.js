@@ -9,7 +9,7 @@ class Rack {
 
   add(ball){
     this._drawBall(ball);
-    this._sortBalls();
+    return this._sortBalls();
   }
 
   get balls (){
@@ -21,7 +21,7 @@ class Rack {
   }
 
   _sortBalls() {
-    this._sort.insertionSort(this._balls);
+    return this._sort.insertionSort(this._balls);
   }
 }
 
