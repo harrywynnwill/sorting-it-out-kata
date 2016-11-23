@@ -1,6 +1,6 @@
 class Character{
   constructor(sort){
-    this._sort = sort
+    this._sort = sort;
     this._splitString;
   }
   splitter(string){
@@ -15,9 +15,8 @@ class Character{
   }
 
   _sortString(string){
-    return this._sort.insertionSort(string)
+    return this._sort.insertionSort(string);
   }
-
 
 }
 module.exports = Character;
